@@ -1,0 +1,34 @@
+# Core web framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# Telegram (used from Phase 1)
+python-telegram-bot==20.8
+
+# HTTP + scraping (used from Phase 2)
+# httpx is pinned to 0.26.x because python-telegram-bot 20.8 requires ~=0.26.0.
+httpx==0.26.0
+beautifulsoup4==4.12.3
+lxml==5.3.0
+
+# Scheduling (used from Phase 2)
+apscheduler==3.10.4
+
+# Database
+# asyncpg 0.30.0 adds prebuilt wheels for Python 3.13 on Windows.
+# Older versions try to compile from source and fail if MSVC isn't set up.
+asyncpg==0.30.0
+
+# Cache / dedup / rate-limit
+redis==5.0.8
+
+# Payments (used from Phase 5)
+razorpay==1.4.2
+
+# Config + validation
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+
+# Logging
+loguru==0.7.2
